@@ -1,0 +1,17 @@
+{
+  "name": "bkielbasa-clickjacking",
+  "version": "1.0.0",
+  "description": "A small library providing utility methods to escape and unescape HTML entities",
+  "keywords": [
+    "jquery",
+    "clickjacking"
+  ],
+  "dependencies": [
+    "jquery"
+  ],
+  "author": "Bartłomiej Kiełbasa <bartlomiej.kielbasa@gmail.com> (http://thrownewexception.pl/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkielbasa/clickjacking/issues"
+  }
+}
