@@ -22,6 +22,10 @@
                 right: 0,
                 bottom: 0,
                 left: 0
+            },
+            coursor: {
+              x: 0,
+              y: 0
             }
         }, options );
 
@@ -30,16 +34,9 @@
         this.applyCss(settings);
         this.cropIframe(settings.rect);
 
-
         $(document).mousemove(function(e){
-            self.css('top', e.clientY - 270 + 'px')
-                .css('left', e.clientX - 1110 + 'px');
-        });
-
-        $(window).blur(function(){
-            setTimeout(function(){
-                self.remove();
-            }, 500);
+            self.css('top', e.clientY - settings.coursor.y + 'px')
+                .css('left', e.clientX - settings.coursor.x + 'px');
         });
 
         return this;
